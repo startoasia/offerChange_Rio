@@ -1,0 +1,109 @@
+.scale {
+    animation: scale 1.5s infinite ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.jump {
+    animation: jump 1s infinite ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.jump2 {
+    animation: jump2 2s infinite ease-in-out;
+}
+
+@keyframes jump2 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* 浮動動畫 */
+
+.downtoup-play {
+    -webkit-animation: downtoup-play 1.5s infinite alternate;
+    animation: downtoup-play 1.5s infinite alternate;
+}
+
+@-webkit-keyframes downtoup-play {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(0, -2vh);
+    }
+}
+
+@keyframes downtoup-play {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -2vh);
+    }
+}
+
+.uptodown-play {
+    -webkit-animation: uptodown-play 1.2s infinite alternate;
+    animation: uptodown-play 1.2s infinite alternate;
+}
+
+@-webkit-keyframes uptodown-play {
+    0% {
+        -webkit-transform: translate(0, -2vh);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@keyframes uptodown-play {
+    0% {
+        transform: translate(0, -2vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.marquee {
+    animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
